@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=5, user-scalable=0" name="viewport"/>
+    <link rel="stylesheet" href="css/style-index.css">
+    <title>Gerenciador de Candidatos</title>
+</head>
+
+<body>
+    <header>
+        <img id="logo-header" src="assets/logoZup-Branco.png" alt="Logo Zup">
+        <form>
+            <input id="search" type="text" placeholder="Buscar" />
+        </form>
+        <div class="user">
+            <img id="user-img" src="">
+        </div>
+    </header>
+
+    <main>
+        <div class="sidenav">
+            <a id="all-nav" class="active" onclick="allList()"><i class="fas fa-border-all"></i>Todos</a>
+            <a id="check-nav" onclick="checkList()"><i class="fas fa-check"></i>Atendidos</a>
+            <a id="trash-nav" onclick="trashList()"><i class="fas fa-trash"></i>Lixeira</a>
+        </div>
+        <div class="center">
+            <section id="candidates">
+                <ul id="list-candidates">
+                </ul>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+    </footer>
+    <script src="https://kit.fontawesome.com/a7ee1f1243.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="js/main-index.js"></script>
+</body>
+</html>
